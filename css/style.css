@@ -55,7 +55,7 @@ section{padding:72px 0}
 .cols3 .col{padding-top:22px;border-top:4px solid var(--teal)}
 @media(max-width:860px){.cols3{grid-template-columns:1fr;gap:28px}}
 
-.photo-band{height:380px;background:center 40%/cover no-repeat}
+.photo-band{height:600px;background:center 40%/cover no-repeat}
 @media(max-width:900px){.photo-band{background-attachment:scroll;height:260px}}
 
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:40px}
