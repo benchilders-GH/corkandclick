@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – Cork &amp; Click</title>
+<meta name="description" content="Contact Cork &amp; Click about photography classes and pricing.">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="index.html"><img src="images/CorkandClick_Header_logo.png" width="260" height="45" alt="Cork &amp; Click Logo"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span></button>
+  <nav class="nav" id="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+</div></header>
+<main id="content">
+
+<section><div class="wrap">
+  <div class="center narrow" style="margin:0 auto 40px">
+    <h1 style="font-size:clamp(1.6rem,3.2vw,2.3rem)">Have a question about our photography classes?</h1>
+    <p>Fill out the form below and we are happy to follow up with you about our classes and pricing!</p>
+  </div>
+  <div class="contact-grid">
+    <!-- Replace YOUR_FORM_ID with your Formspree form ID (https://formspree.io). See README. -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="field"><label for="name">Name <span class="req">* (required)</span></label><input type="text" id="name" name="name" required autocomplete="name"></div>
+      <div class="field"><label for="email">Email <span class="req">* (required)</span></label><input type="email" id="email" name="email" required autocomplete="email"></div>
+      <div class="field"><label for="type">Select the type of class you are interested in. <span class="req">* (required)</span></label>
+        <select id="type" name="class_type" required>
+          <option value="" disabled selected>Choose one&hellip;</option>
+          <option>Private Lesson</option><option>Group Basic Photography Class</option><option>Group iPhone Photography Class</option><option>Just have questions!</option>
+        </select></div>
+      <div class="field"><label for="details">Provide additional details here</label><textarea id="details" name="message"></textarea></div>
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="_subject" value="Cork & Click website inquiry">
+      <button class="btn" type="submit">Submit</button>
+    </form>
+    <img class="contact-img" src="images/Learning.jpg" alt="Two women looking at a camera together" width="900" height="600" loading="lazy">
+  </div>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap"><p>Cork &amp; Click is a product of Get Off Auto, LLC | &copy; 2012-2020 Get Off Auto, LLC | All Rights Reserved | <a href="privacy.html">Privacy Statement</a> | <a href="cancellation.html">Cancellation Policy</a></p></div></footer>
+<script src="js/main.js" defer></script>
+</body>
+</html>
