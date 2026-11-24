@@ -24,8 +24,8 @@
     <p>Fill out the form below and we are happy to follow up with you about our classes and pricing!</p>
   </div>
   <div class="contact-grid">
-    <!-- Replace YOUR_FORM_ID with your Formspree form ID (https://formspree.io). See README. -->
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <!-- Replace YOUR_EMAIL@example.com with the address that should receive submissions. See README (FormSubmit). -->
+    <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
       <div class="field"><label for="name">Name <span class="req">* (required)</span></label><input type="text" id="name" name="name" required autocomplete="name"></div>
       <div class="field"><label for="email">Email <span class="req">* (required)</span></label><input type="email" id="email" name="email" required autocomplete="email"></div>
       <div class="field"><label for="type">Select the type of class you are interested in. <span class="req">* (required)</span></label>
@@ -34,8 +34,9 @@
           <option>Private Lesson</option><option>Group Basic Photography Class</option><option>Group iPhone Photography Class</option><option>Just have questions!</option>
         </select></div>
       <div class="field"><label for="details">Provide additional details here</label><textarea id="details" name="message"></textarea></div>
-      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
       <input type="hidden" name="_subject" value="Cork & Click website inquiry">
+      <input type="hidden" name="_template" value="table">
       <button class="btn" type="submit">Submit</button>
     </form>
     <img class="contact-img" src="images/Learning.jpg" alt="Two women looking at a camera together" width="900" height="600" loading="lazy">

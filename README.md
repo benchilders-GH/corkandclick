@@ -21,8 +21,10 @@ All pages sit in the root and link to each other relatively, so the site works a
 3. For corkandclick.com: add the domain under Pages → Custom domain (this creates a `CNAME` file) and point DNS at GitHub Pages.
 
 ## Contact form (needs one edit)
-GitHub Pages can't run PHP, so the form posts to [Formspree](https://formspree.io) (free tier available).
-Create a form there, then replace `YOUR_FORM_ID` in `contact.html`.
+GitHub Pages can't run PHP, so the form posts to [FormSubmit](https://formsubmit.co) (free, no account).
+1. In `contact.html`, replace `YOUR_EMAIL@example.com` in the form's `action` with your real address.
+2. Publish the site, submit the form once, and click the activation link FormSubmit emails you. Repeat if you move to a different domain.
+3. Optional: after activating, FormSubmit sends a private alias token. Use it in place of your email in `action` so your address isn't visible in the page source.
 
 ## Not carried over
 Google Analytics / AdRoll tracking, the shop/Gravity Forms/WooCommerce pieces, and the other blog posts.
